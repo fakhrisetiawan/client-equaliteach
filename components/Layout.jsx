@@ -35,9 +35,9 @@ export const Layout = ({ children }) => {
       <nav className="navbar" id="navbar">
         <p className="logo">EQUALITEACH</p>
         <div className={`navbar-nav ${isMenuOpen ? "active" : ""}`}>
-          <Link href={"/"}>Home</Link>
-          <Link href={"/content"}>Content</Link>
-          <Link href="/about">About Us</Link>
+        <Link href="https://equaliteach.netlify.app/">Home</Link>
+        <Link href="https://equaliteach.netlify.app/#/content">Content</Link>
+        <Link href="https://equaliteach.netlify.app/#/aboutus">About Us</Link>
           {nama != null ? (
             <a className="user">
               <svg
