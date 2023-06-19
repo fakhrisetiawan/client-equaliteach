@@ -41,7 +41,7 @@ const Login = () => {
       localStorage.setItem("token", token);
       localStorage.setItem("username", username);
       toast.success("Berhasil Login");
-      setTimeout(() => router.replace("/diskusi"), 1500);
+      setTimeout(() => {window.location.href = "https://equaliteach.netlify.app/";, 1500);
     } catch (error) {
       // Handle login error
       console.log(error);
