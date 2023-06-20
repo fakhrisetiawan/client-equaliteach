@@ -18,8 +18,8 @@ export default function Diskusi() {
   const router = useRouter();
 
   if (nama == null) {
-    toast.error("Anda harus login terlebih dahulu.");
     window.location.href = "https://equaliteach-delta.vercel.app/auth/login";
+    toast.error("Anda harus login terlebih dahulu.");
   }
 
   return (
