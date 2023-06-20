@@ -19,13 +19,7 @@ export default function Diskusi() {
 
   if (nama == null) {
     toast.error("Anda harus login terlebih dahulu.");
-<<<<<<< HEAD
     window.location.href = "https://equaliteach.netlify.app/";
-=======
-    setTimeout(() => {
-        window.location.href = "https://equaliteach.netlify.app/";
-      }, 1500);
->>>>>>> 49320f65bb3d2d94cb1f34ba9f797c2ccdded0e8
   }
 
   return (

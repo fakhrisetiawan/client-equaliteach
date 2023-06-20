@@ -8,6 +8,13 @@ export const Layout = ({ children }) => {
   const [isMobile, setIsMobile] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLogout = (e) => {
+    e.preventDefault();
+
+    localStorage.removeItem("username");
+    window.location.href = "https://equaliteach.netlify.app/";
+  };
+
   useEffect(() => {
     // This code will be executed on the client-side
     const nama = localStorage.getItem("username");
@@ -35,14 +42,11 @@ export const Layout = ({ children }) => {
       <nav className="navbar" id="navbar">
         <p className="logo">EQUALITEACH</p>
         <div className={`navbar-nav ${isMenuOpen ? "active" : ""}`}>
-<<<<<<< HEAD
         <Link href="https://equaliteach.netlify.app/">Home</Link>
-=======
-          <Link href="https://equaliteach.netlify.app/">Home</Link>
->>>>>>> 49320f65bb3d2d94cb1f34ba9f797c2ccdded0e8
         <Link href="https://equaliteach.netlify.app/#/content">Content</Link>
         <Link href="https://equaliteach.netlify.app/#/aboutus">About Us</Link>
           {nama != null ? (
+            <>
             <a className="user">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +57,10 @@ export const Layout = ({ children }) => {
               </svg>{" "}
               <span className="username">{nama}</span>
             </a>
+            <div onClick={handleLogout} style={{ cursor: "pointer" }}>
+              <a>Logout</a>
+            </div>
+          </>
           ) : (
             <Link href={"/auth/login"} className="btn-login">
               Login

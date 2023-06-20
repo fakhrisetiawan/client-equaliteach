@@ -41,15 +41,10 @@ const Login = () => {
       localStorage.setItem("token", token);
       localStorage.setItem("username", username);
       toast.success("Berhasil Login");
-<<<<<<< HEAD
       setTimeout(() => {
         window.location.href = "https://equaliteach.netlify.app/";
       }, 1500);   
      } catch (error) {
-=======
-      setTimeout(() => {window.location.href = "https://equaliteach.netlify.app/";, 1500);
-    } catch (error) {
->>>>>>> 49320f65bb3d2d94cb1f34ba9f797c2ccdded0e8
       // Handle login error
       console.log(error);
       toast.error("Gagal Login");
