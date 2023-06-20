@@ -12,10 +12,7 @@ export const Layout = ({ children }) => {
     e.preventDefault();
 
     localStorage.removeItem("username");
-    toast.success("Berhasil Logout");
-      setTimeout(() => {
-        window.location.href = "https://equaliteach.netlify.app/";
-      }, 1000);
+    window.location.href = "https://equaliteach.netlify.app/";
   };
 
   useEffect(() => {
