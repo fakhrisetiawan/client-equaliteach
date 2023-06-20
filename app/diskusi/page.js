@@ -21,7 +21,7 @@ export default function Diskusi() {
     toast.error("Anda harus login terlebih dahulu.");
     setTimeout(() => {
       window.location.href = "https://equaliteach-delta.vercel.app/auth/login";
-    }, 1000);
+    }, 500);
   }
 
   return (
