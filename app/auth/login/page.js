@@ -42,7 +42,7 @@ const Login = () => {
       localStorage.setItem("username", username);
       toast.success("Berhasil Login");
       setTimeout(() => {
-        window.location.href = "https://equaliteach.netlify.app/";
+        window.location.href = "https://equaliteach-delta.vercel.app/diskusi";
       }, 1500);   
      } catch (error) {
       // Handle login error
