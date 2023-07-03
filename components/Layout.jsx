@@ -16,7 +16,7 @@ export const Layout = ({ children }) => {
   };
 
   useEffect(() => {
-    // This code will be executed on the client-side
+    // This code will be executed on the client-side.
     const nama = localStorage.getItem("username");
     setNama(nama);
 
