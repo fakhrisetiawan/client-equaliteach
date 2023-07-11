@@ -21,7 +21,7 @@ const PostDiskusi = () => {
 
     try {
       const response = await axios.post(
-        "https://backend-equaliteach.vercel.app/api/diskusi",
+        "http://server-equaliteach-rho.vercel.app/api/diskusi",
         {
           username: nama,
           discuss: pesan,

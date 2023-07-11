@@ -13,7 +13,7 @@ const GetDiskusi = () => {
     setToken(myToken);
     const fetchData = async () => {
       try {
-        let url = "https://backend-equaliteach.vercel.app/api/diskusi";
+        let url = "http://server-equaliteach-rho.vercel.app/api/diskusi";
 
         if (selectedCategory) {
           url += `?category=${selectedCategory}`;

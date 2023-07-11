@@ -26,7 +26,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://backend-equaliteach.vercel.app/api/login",
+        "http://server-equaliteach-rho.vercel.app/api/login",
         {
           email,
           password,
