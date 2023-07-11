@@ -30,7 +30,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://server-equaliteach-rho.vercel.app/api/register",
+        "https://server-equaliteach-rho.vercel.app/api/register",
         {
           username,
           email,

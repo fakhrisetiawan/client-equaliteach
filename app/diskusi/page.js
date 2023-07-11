@@ -20,7 +20,7 @@ export default function Diskusi() {
   if (nama == null) {
     toast.error("Anda harus login terlebih dahulu.");
     setTimeout(() => {
-      window.location.href = "https://equaliteach-delta.vercel.app/auth/login";
+      window.location.href = "https://equaliteach-gender.vercel.app/auth/login";
     }, 500);
   }
 
