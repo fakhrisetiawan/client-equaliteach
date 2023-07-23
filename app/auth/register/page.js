@@ -39,7 +39,7 @@ const Register = () => {
       );
 
       // Handle successful registration
-      toast.success(`${response.msg}. Silahkan Login`);
+      toast.success(`Register Berhasil. Silahkan Login`);
       router.replace("/auth/login");
     } catch (error) {
       // Handle registration error
